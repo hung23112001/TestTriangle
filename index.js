@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 // Check value A, B, C
     e_edgeA.onkeyup = function(){
-        if(typeof(e_edgeA.value) == "undefined" || e_edgeA.value.length == 0 || e_edgeA.value == 0){
+        if(typeof(e_edgeA.value) == "undefined" || e_edgeA.value.length == 0 || e_edgeA.value <= 0){
             text_valueA.innerHTML = "Cạnh A không hợp lệ";
         }else{
             edgeA_value = e_edgeA.value;
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     }
     e_edgeB.onkeyup = function(){
-        if(typeof(e_edgeB.value) == "undefined" || e_edgeB.value.length == 0 || e_edgeB.value == 0){
+        if(typeof(e_edgeB.value) == "undefined" || e_edgeB.value.length == 0 || e_edgeB.value <= 0){
             text_valueB.innerHTML = "Cạnh B không hợp lệ";
         }
         else{
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     }
     e_edgeC.onkeyup = function(){
-        if(typeof(e_edgeC.value) == "undefined" || e_edgeC.value.length == 0 || e_edgeC.value == 0){
+        if(typeof(e_edgeC.value) == "undefined" || e_edgeC.value.length == 0 || e_edgeC.value <= 0){
             text_valueC.innerHTML = "Cạnh C không hợp lệ";
         }
         else{
