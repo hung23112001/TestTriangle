@@ -44,9 +44,9 @@ document.addEventListener("DOMContentLoaded", function(){
     document.querySelector("#btn_submit").onclick = function(){
         
         const result_Triangle = document.querySelector('.this_is');
-        edgeA_value = parseInt(edgeA_value);
-        edgeB_value = parseInt(edgeB_value);
-        edgeC_value = parseInt(edgeC_value);
+        edgeA_value = parseFloat(edgeA_value);
+        edgeB_value = parseFloat(edgeB_value);
+        edgeC_value = parseFloat(edgeC_value);
 
         // If this is a triangle then show form result type triangle.
         if( edgeA_value<edgeB_value+edgeC_value && edgeB_value<edgeA_value+edgeC_value && edgeC_value<edgeA_value+edgeB_value ){
