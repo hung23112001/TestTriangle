@@ -68,5 +68,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 result_Triangle.innerHTML = "Đây là tam giác thường";
             }
         }
+        else{
+            result_Triangle.innerHTML = "Ba cạnh A, B, C không tạo thành một tam giác";
+        }
     }
 });
